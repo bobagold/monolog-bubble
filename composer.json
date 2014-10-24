@@ -1,0 +1,19 @@
+{
+    "name": "bobagold/monolog-bubble",
+    "description": "Limit logging of similar records",
+    "autoload": {
+        "psr-0": { "Bubble": "src/" }
+    },
+    "require": {
+        "monolog/monolog": "1.6.*"
+    },
+    "require-dev": {
+        "doctrine/dbal": "2.3.0"
+    },
+    "authors": [
+        {
+            "name": "Vladimir Goldobin",
+            "email": "bobagold@gmail.com"
+        }
+    ]
+}
