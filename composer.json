@@ -1,6 +1,7 @@
 {
     "name": "bobagold/monolog-bubble",
     "description": "Limit logging of similar records",
+    "license": "MIT",
     "autoload": {
         "psr-0": { "Bubble": "src/" }
     },
