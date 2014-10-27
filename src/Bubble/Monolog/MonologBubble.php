@@ -33,7 +33,7 @@ class MonologBubble
         unset($record['datetime']);
         unset($record['extra']);
 
-        if ($record['context']['exception']) {
+        if (isset($record['context']['exception'])) {
             $record['context']['exception'] = self::generalizeException($record['context']['exception']);
         }
 

@@ -19,7 +19,7 @@ class BubbleHandler extends AbstractHandler
 
     public function handle(array $record)
     {
-        if ($record['level'] < $this->level || $record['context']['just_log']) {
+        if ($record['level'] < $this->level || isset($record['context']['just_log']) && $record['context']['just_log']) {
             return false;
         }
         $bubble = \Bubble\Monolog\MonologBubble::monolog2bubble($record);
