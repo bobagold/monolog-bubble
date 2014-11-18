@@ -6,6 +6,9 @@ class MemcacheArrayTest extends \PHPUnit_Framework_TestCase
 {
     public function testReadWrite()
     {
+        if (!class_exists('Memcache')) {
+            $this->markTestSkipped('Memcache is not installed');
+        }
         $memcacheArray = new MemcacheArray();
         unset($memcacheArray['test']);
         $this->assertFalse(isset($memcacheArray['test']));

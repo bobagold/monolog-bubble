@@ -12,6 +12,9 @@ class MemcacheArray implements ArrayAccess
 
     public function __construct()
     {
+        if (!class_exists('Memcache')) {
+            return;
+        }
         $this->prefix = substr(md5(__FILE__), -6);
         $this->memcache = new Memcache;
         if (!$this->memcache->connect('127.0.0.1')) {

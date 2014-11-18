@@ -12,6 +12,9 @@
         "doctrine/dbal": "2.3.0",
         "phpunit/phpunit": "~4.3"
     },
+    "suggest": {
+        "ext-memcache": "For using MemcacheArray as in README.md"
+    },
     "authors": [
         {
             "name": "Vladimir Goldobin",
