@@ -6,7 +6,7 @@
         "psr-0": { "Bubble": "src/" }
     },
     "require": {
-        "monolog/monolog": "1.6.*"
+        "monolog/monolog": "1.*"
     },
     "require-dev": {
         "doctrine/dbal": "2.3.0",
