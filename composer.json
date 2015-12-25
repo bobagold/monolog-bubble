@@ -13,7 +13,8 @@
         "phpunit/phpunit": "~4.3"
     },
     "suggest": {
-        "ext-memcache": "For using MemcacheArray as in README.md"
+        "ext-memcache": "For using MemcacheArray as in README.md",
+        "ext-memcached": "For using MemcachedArray"
     },
     "authors": [
         {
